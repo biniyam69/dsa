@@ -15,7 +15,7 @@ public:
         A = new int[2*(2+1)/2];
 
     }
-    LowerTriangular()
+    LowerTriangular(int n)
     {
         this -> n=n;
         A = new int[n*(n+1)/2];
@@ -59,5 +59,14 @@ void LowerTriangular::Display()
 
 int main()
 {
-    
+    int d;
+    cout<<"Enter dimensions ";
+    cin>>d;
+
+    LowerTriangular lm(d);
+
+    int x;
+    cout<<"enter all elements";
+
+    return 0;  
 }
